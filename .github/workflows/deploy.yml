@@ -37,8 +37,8 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "flaw19-rush-70"
-          entrypoint: "jsr:@deno/nextjs-start"
-          root: "."
-          include: .next, public
+          project: "flaw19-rush-74"
+          entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
+          root: "out"
+          
           
